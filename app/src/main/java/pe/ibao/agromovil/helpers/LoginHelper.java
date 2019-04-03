@@ -59,7 +59,7 @@ public class LoginHelper {
                         try {
 
                             new UsuarioDAO(ctx).borrarTable();
-
+                            Log.d("RESPUESTA",response);
                             JSONObject data = new JSONObject(response);
                             int success = data.getInt("success");
                             if (success == 1) {
@@ -97,6 +97,7 @@ public class LoginHelper {
                             }
 
                         } catch (JSONException e) {
+                            Toast.makeText(ctx, "Error de Interpretacion del Servidor, comuniquese con el Proveedor del Software", Toast.LENGTH_SHORT).show();
                             Log.d("autentification",e.toString());
                         }
                     }

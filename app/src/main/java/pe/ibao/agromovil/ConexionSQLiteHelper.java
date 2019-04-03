@@ -14,6 +14,7 @@ public class ConexionSQLiteHelper extends SQLiteOpenHelper{
     public ConexionSQLiteHelper(Context context, String name, SQLiteDatabase.CursorFactory factory, int version) {
         super(context, name, factory, version);
     }
+
     String TAG = "CREATE_TABLE";
     @Override
     public void onCreate(SQLiteDatabase db) {
@@ -37,7 +38,6 @@ public class ConexionSQLiteHelper extends SQLiteOpenHelper{
         db.execSQL(Utilities.CREATE_TABLE_CRITERIORECOMENDACION);
         db.execSQL(Utilities.CREATE_TABLE_RECOMENDACION);
         db.execSQL(Utilities.CREATE_TABLE_CONFIGURACIONRECOMENDACION);
-
         db.execSQL(Utilities.CREATE_TABLE_COLAFOTOS);
     }
 

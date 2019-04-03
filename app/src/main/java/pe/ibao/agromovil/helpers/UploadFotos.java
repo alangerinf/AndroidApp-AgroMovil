@@ -52,7 +52,6 @@ public class UploadFotos {
     }
 
     public void Upload(final int idInterno, final int idEvidencia, final String bitmap,int i,int cantidad){
-
         status =1;
         StringRequest sr = new StringRequest(Request.Method.POST,
                 URL_UPLOAD_FOTOS,

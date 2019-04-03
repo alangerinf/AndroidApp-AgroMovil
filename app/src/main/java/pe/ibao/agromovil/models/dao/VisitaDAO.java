@@ -136,10 +136,13 @@ public class VisitaDAO {
                     String nameFundo = f.getName();
                     temp.setNameFundo(nameFundo);
                     //obteniedno datos d e empresa
-                    EmpresaVO empresaVO = new EmpresaDAO(ctx).consultarEmpresaByid(temp.getIdFundo());
+                    EmpresaVO empresaVO = new EmpresaDAO(ctx).consultarEmpresaByid(f.getIdEmpresa());
 
                     temp.setIdEmpresa(empresaVO.getId());
+                    Log.d(TAG,"getEditing -3 "+temp.getIdEmpresa());
                     temp.setNameEmpresa(empresaVO.getName());
+                    Log.d(TAG,"getEditing -4 "+temp.getNameEmpresa());
+
 
                 }
                 if(temp.getIdVariedad()>0){
@@ -284,10 +287,13 @@ public class VisitaDAO {
                     String nameFundo = f.getName();
                     temp.setNameFundo(nameFundo);
                     //obteniedno datos d e empresa
-                    EmpresaVO empresaVO = new EmpresaDAO(ctx).consultarEmpresaByid(temp.getIdFundo());
+                    EmpresaVO empresaVO = new EmpresaDAO(ctx).consultarEmpresaByid(f.getIdEmpresa());
 
                     temp.setIdEmpresa(empresaVO.getId());
+                    Log.d(TAG,"getEditing -3 "+temp.getIdEmpresa());
                     temp.setNameEmpresa(empresaVO.getName());
+                    Log.d(TAG,"getEditing -4 "+temp.getNameEmpresa());
+
 
                 }
                 if(temp.getIdVariedad()>0){
@@ -435,10 +441,13 @@ public class VisitaDAO {
                             Log.d(TAG,"getEditing -4 "+temp.getIdFundo());
                            //obteniedno datos d e empresa
 
-                            EmpresaVO empresaVO = new EmpresaDAO(ctx).consultarEmpresaByid(temp.getIdFundo());
+                            EmpresaVO empresaVO = new EmpresaDAO(ctx).consultarEmpresaByid(f.getIdEmpresa());
 
                             temp.setIdEmpresa(empresaVO.getId());
+                            Log.d(TAG,"getEditing -3 "+temp.getIdEmpresa());
                             temp.setNameEmpresa(empresaVO.getName());
+                            Log.d(TAG,"getEditing -4 "+temp.getNameEmpresa());
+
 
                         }
                         if(temp.getIdVariedad()>0){
@@ -753,10 +762,13 @@ public class VisitaDAO {
                     Log.d(TAG,"getEditing -4 "+temp.getIdFundo());
                     //obteniedno datos d e empresa
 
-                    EmpresaVO empresaVO = new EmpresaDAO(ctx).consultarEmpresaByid(temp.getIdFundo());
+                    EmpresaVO empresaVO = new EmpresaDAO(ctx).consultarEmpresaByid(f.getIdEmpresa());
 
                     temp.setIdEmpresa(empresaVO.getId());
+                    Log.d(TAG,"getEditing -3 "+temp.getIdEmpresa());
                     temp.setNameEmpresa(empresaVO.getName());
+                    Log.d(TAG,"getEditing -4 "+temp.getNameEmpresa());
+
 
                 }
                 if(temp.getIdVariedad()>0){

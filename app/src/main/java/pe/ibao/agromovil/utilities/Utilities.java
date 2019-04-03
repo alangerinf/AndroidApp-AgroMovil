@@ -3,7 +3,7 @@ package pe.ibao.agromovil.utilities;
 
 public class Utilities {
 
-    public static final String URL_ROOT="http://apps.ibao.pe/agromovil/incavo/requests/";
+    public static final String URL_ROOT="http://35.167.15.182/agromovil/incavo/requests/";
     public static final String URL_AUTENTIFICATION=URL_ROOT+"autenticar.php";
     public static final String URL_DOWNLOAD_TABLE_EMPRESA=URL_ROOT+"getEnterprises.php";
     public static final String URL_DOWNLOAD_TABLE_FUNDO=URL_ROOT+"getFundos.php";
@@ -23,7 +23,6 @@ public class Utilities {
     public static final String URL_UPLOAD_FOTOS=URL_ROOT+"insertFotos.php";
 
     public static final String DATABASE_NAME="data";
-
 
     public static final String TABLE_ZONA="zona",
             TABLE_ZONA_COL_ID       ="id",
@@ -85,11 +84,11 @@ public class Utilities {
 
     public static final String TABLE_VARIEDAD="variedad",
             TABLE_VARIEDAD_COL_ID               ="id",
-            TABLE_VARIEDAD_TYPECOL_ID           ="id",
+            TABLE_VARIEDAD_TYPECOL_ID           ="INTEGER",
             TABLE_VARIEDAD_COL_NAME             ="name",
-            TABLE_VARIEDAD_TYPECOL_NAME         ="name",
+            TABLE_VARIEDAD_TYPECOL_NAME         ="VARCHAR(50)",
             TABLE_VARIEDAD_COL_IDCULTIVO        ="idCultivo",
-            TABLE_VARIEDAD_TYPECOL_IDCULTIVO    ="idCultivo";
+            TABLE_VARIEDAD_TYPECOL_IDCULTIVO    ="INTEGER";
 
 
     public static final String TABLE_FUNDOVARIEDAD="fundoVariedad",
