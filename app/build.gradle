@@ -4,10 +4,10 @@ android {
     compileSdkVersion 28
     defaultConfig {
         applicationId 'pe.ibao.agromovil'
-        minSdkVersion 19
+        minSdkVersion 21
         targetSdkVersion 28
-        versionCode 9
-        versionName "1.0g"
+        versionCode 10
+        versionName "1.2g"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         multiDexEnabled true
     }
